@@ -6,16 +6,21 @@
   <title>Page 3</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
+  <style>
+    #confetti-canvas {
+      pointer-events: none; /* Make the canvas non-interactive */
+    }
+  </style>
 </head>
 <body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen animate-fadeIn">
-  <main class="text-center space-y-6">
+  <main class="text-center space-y-6 relative">
     <!-- Message Container -->
     <div id="message-container" class="text-lg sm:text-xl md:text-2xl font-semibold text-gray-800">
       <p id="thank-you-message" class="mb-2">Hayeeeeeeeee ❤️❤️❤️❤️ plz Msg/Call/Mail/DM 🎉 Anything</p>
       <p id="thank-you-message">I'll be Waiting 🤩</p>
     </div>
     <!-- Video -->
-    <div class="w-full max-w-md">
+    <div class="w-full max-w-md relative z-10">
       <video id="videoThree" class="w-full h-auto rounded-lg shadow-lg" controls autoplay loop>
         <source src="src/Final.mp4" type="video/mp4">
         Your browser does not support the video tag.
@@ -24,6 +29,11 @@
     <!-- Confetti Canvas -->
     <canvas id="confetti-canvas" class="absolute inset-0"></canvas>
   </main>
-  <script src="script-final.js"></script>
+  <script>
+    // Initialize confetti-js
+    const confettiSettings = { target: 'confetti-canvas' };
+    const confetti = new ConfettiGenerator(confettiSettings);
+    confetti.render();
+  </script>
 </body>
 </html>
