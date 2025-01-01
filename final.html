@@ -4,22 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page 3</title>
-  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
 </head>
-<body class="fade-in">
-  <main>
-    <div id="message-container">
-      <p id="thank-you-message">Hayeeeeeeeee❤️❤️❤️❤️ plz Msg/Call/Mail/DM 🎉 Anything</p>
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen animate-fadeIn">
+  <main class="text-center space-y-6">
+    <!-- Message Container -->
+    <div id="message-container" class="text-lg sm:text-xl md:text-2xl font-semibold text-gray-800">
+      <p id="thank-you-message" class="mb-2">Hayeeeeeeeee ❤️❤️❤️❤️ plz Msg/Call/Mail/DM 🎉 Anything</p>
       <p id="thank-you-message">I'll be Waiting 🤩</p>
     </div>
-    <div>
-        <video id="videoThree" width="350" height="300" controls autoplay loop>
-            <source src="src/Final.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+    <!-- Video -->
+    <div class="w-full max-w-md">
+      <video id="videoThree" class="w-full h-auto rounded-lg shadow-lg" controls autoplay loop>
+        <source src="src/Final.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </div>
-    <canvas id="confetti-canvas"></canvas>
+    <!-- Confetti Canvas -->
+    <canvas id="confetti-canvas" class="absolute inset-0"></canvas>
   </main>
   <script src="script-final.js"></script>
 </body>

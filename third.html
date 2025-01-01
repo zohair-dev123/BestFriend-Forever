@@ -4,24 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page 2</title>
-  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
 </head>
-<body class="fade-in">
-  <header id="main">
-    <h1>🫣 AP mere sath 👇🏻</h1>
-    <h1>PLZZZ</h1>
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen animate-fadeIn">
+  <header id="main" class="text-center mb-6">
+    <h1 class="text-4xl font-bold text-red-500 mb-2">🫣 Kya Tum Mere Sath 👇🏻</h1>
+    <h1 class="text-3xl font-semibold text-gray-700">PLZZZ</h1>
   </header>
-  <main>
-    <div class="gif-container">
-      <video id="videoTwo" width="300" height="300" controls autoplay loop>
+  <main class="flex flex-col items-center">
+    <div class="gif-container mb-8">
+      <video id="videoTwo" class="w-72 h-72 rounded-lg shadow-md" controls autoplay loop>
         <source src="src/SRK.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
-    <div class="button-container">
-      <button id="no-button">Nope</button>
-      <button id="yes-button">Why Not 😁</button>
+    <div class="button-container flex space-x-4">
+      <button id="no-button" class="bg-red-500 text-white px-6 py-2 rounded-lg shadow hover:bg-red-600">Nope</button>
+      <button id="yes-button" class="bg-green-500 text-white px-6 py-2 rounded-lg shadow hover:bg-green-600">Why Not 😁</button>
     </div>
   </main>
   <script src="script-third.js"></script>

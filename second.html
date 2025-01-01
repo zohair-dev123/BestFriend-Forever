@@ -4,23 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page 2</title>
-  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
 </head>
-<body class="fade-in">
-  <header id="main">
-    <h1>😍 Thank You ye sab 💐 tumhare liye</h1>
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen animate-fadeIn">
+  <header id="main" class="text-center mb-8">
+    <h1 class="text-4xl font-bold text-pink-500">😍 Thank You For Accepting ye sab 💐 tumhare liye</h1>
   </header>
-  <main>
-    <div class="gif-container">
-      <video id="videoTwo" width="300" height="300" controls autoplay loop>
+  <main class="flex flex-col items-center">
+    <div class="gif-container mb-8">
+      <video id="videoTwo" class="w-72 h-72 rounded-lg shadow-lg" controls autoplay loop>
         <source src="src/Phool.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
-    <div class="button-container">
-      <button id="no-button">Hmmmm</button>
-      <button id="yes-button">Beautiful Thankyou</button>
+    <div class="button-container flex space-x-4">
+      <button id="no-button" class="bg-blue-500 text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-600">Hmmmm</button>
+      <button id="yes-button" class="bg-purple-500 text-white px-6 py-2 rounded-lg shadow-md hover:bg-purple-600">Beautiful Thankyou</button>
     </div>
   </main>
   <script src="script-second.js"></script>

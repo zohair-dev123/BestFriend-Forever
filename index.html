@@ -4,28 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page 1</title>
-  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
 </head>
-<body class="fade-in">
-  <header id="main">
-    <h1>Hellooooo Engineer plz accept bcz?🥹</h1>
-    <h1> 👇🏻</h1>
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen animate-fadeIn">
+  <header id="main" class="text-center mb-8">
+    <h1 class="text-4xl font-bold text-blue-600">Hellooooo Engineer plz accept bcz?🥹</h1>
+    <h1 class="text-2xl mt-4">👇🏻</h1>
   </header>
-  <main>
-    <div class="gif-container">
-      <video id="videoOne" width="400" height="400" controls autoplay loop>
+  <main class="flex flex-col items-center">
+    <div class="gif-container mb-8">
+      <video id="videoOne" class="w-96 h-96 rounded-lg shadow-lg" controls autoplay loop>
         <source src="src/Sorry.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
-      <img id="gif" src="pls.gif" alt="Please">
+      <img id="gif" class="mt-4 w-48 h-48 rounded-lg" src="pls.gif" alt="Please">
     </div>
-    <div class="button-container">
-      <button id="no-button">Nope</button>
-      <button id="yes-button">Accepted</button>
+    <div class="button-container flex space-x-4">
+      <button id="no-button" class="bg-red-500 text-white px-6 py-2 rounded-lg shadow-md hover:bg-red-600">Nope</button>
+      <button id="yes-button" class="bg-green-500 text-white px-6 py-2 rounded-lg shadow-md hover:bg-green-600">Accepted</button>
     </div>
   </main>
   <script src="script.js"></script>
 </body>
 </html>
-
